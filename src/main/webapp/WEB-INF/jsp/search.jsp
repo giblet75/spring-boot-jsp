@@ -17,6 +17,15 @@
     </ul>
 
     <h3>Search</h3>
+
+    <button>Search</button>
+    <select name="category">
+        <option value="">-- Search Category --</option>
+        <c:forEach items="${categories}" var="category">
+            <option value="${category}">${category}</option>
+        </c:forEach>
+    </select>
+    <input type="text" />
 </body>
 
 </html>
