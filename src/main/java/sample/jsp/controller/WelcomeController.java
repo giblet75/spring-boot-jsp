@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package sample.jsp;
+package sample.jsp.controller;
 
 import java.util.Date;
 import java.util.Map;
@@ -35,6 +35,11 @@ public class WelcomeController {
 		model.put("time", new Date());
 		model.put("message", this.message);
 		return "welcome";
+	}
+
+	@RequestMapping("/create")
+	public String create(Map<String, Object> model) {
+		return "create";
 	}
 
 	@RequestMapping("/foo")
